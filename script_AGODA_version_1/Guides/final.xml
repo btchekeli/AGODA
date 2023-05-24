@@ -1,0 +1,754 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-26_p0175">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" xml:lang="fr"/>
+        <title type="main" xml:lang="en"/>
+        <title type="sub" xml:lang="fr"/>
+        <title type="sub" xml:lang="en"/>
+        <meeting n="E1" ana="#parla.lower&#10;#parla.session">Session extraordinaire de 1889</meeting>
+        <meeting n="5L" ana="#parla.lower&#10;#parla.legislature">5e législature</meeting>
+        <meeting n=" 10" ana="#parla.lower&#10;#parla.sitting"> 10e séance</meeting>
+        <respStmt>
+          <persName>
+            <forename>Brunel</forename>
+            <surname>TCHEKELI</surname>
+            <ptr type="id-hal" target="Brunel TCHEKELI"/>
+          </persName>
+          <resp xml:lang="fr">Transformation du JSON en XML-TEI et ajout automatique des balises TEI par des scripts Python</resp>
+          <resp xml:lang="en">Transformation from JSON to XML-TEI and automatic addition of TEI tags by Python scripts</resp>
+        </respStmt>
+        <respStmt>
+          <persName>
+            <forename>Marie</forename>
+            <surname>PUREN</surname>
+            <ptr type="id-hal" target="Marie PUREN"/>
+            <ptr type="orcid" target="0000-0001-5452-3913"/>
+          </persName>
+          <resp xml:lang="fr">TEI Header</resp>
+          <resp xml:lang="en">TEI Header</resp>
+        </respStmt>
+        <respStmt>
+          <persName>
+            <forename>Pierre</forename>
+            <surname>VERNUS</surname>
+            <ptr type="id-hal" target="Pierre VERNUS"/>
+          </persName>
+        </respStmt>
+        <funder>
+          <orgName xml:lang="fr">Bibliothèque nationale de France</orgName>
+          <orgName xml:lang="en">National Library of France</orgName>
+        </funder>
+      </titleStmt>
+      <extent>
+        <measure quantity="counts" xml:lang="fr">pages</measure>
+        <measure quantity="counts" xml:lang="en">pages</measure>
+        <measure quantity="counts" xml:lang="sl">énoncés</measure>
+        <measure quantity="counts" xml:lang="en">utterances</measure>
+        <measure quantity="counts" xml:lang="sl">mots</measure>
+        <measure quantity="counts" xml:lang="en">words</measure>
+      </extent>
+      <publicationStmt>
+        <publisher>AGODA</publisher>
+        <authority>Bnf Datalab</authority>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+        <date when="2023-05-11"/>
+        <meeting n="E1" ana="#parla.lower&#10;#parla.session">Session extraordinaire de 1889.</meeting>
+        <meeting n="5                                                    L" ana="#parla.lower&#10;#parla.legislature">5° législature. </meeting>
+        <meeting n=" 10" ana="#parla.lower&#10;#parla.sitting">COMPTE RENDU IN EXTENSO. — 10° SÉANCE</meeting>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title>A définir</title>
+          </titleStmt>
+          <publicationStmt>
+            <publisher xml:lang="fr"> </publisher>
+            <publisher xml:lang="en"> </publisher>
+            <pubPlace>
+              <location>
+                <country key="FR"/>
+                <settlement type="city"> </settlement>
+              </location>
+            </pubPlace>
+            <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">Source gallica.bnf.fr / Bibliothèque nationale de France</distributor>
+            <availability>
+              <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica" xml:lang="fr">
+                <p>Les contenus accessibles sur le site Gallica sont pour la plupart des reproductions numériques d'œuvres tombées dans le domaine public provenant des collections de la BnF.</p>
+                <p>Ces contenus sont considérés, en vertu du code des relations entre le public et l’administration, comme étant des informations publiques et leur réutilisation s'inscrit dans le cadre des dispositions prévues aux articles L. 321-1 à L. 327-1 de ce code.</p>
+              </licence>
+            </availability>
+            <date when="1889-11-27">27 Novembre 1889</date>
+          </publicationStmt>
+          <seriesStmt>
+            <title>Journal Officiel de la République française</title>
+            <biblScope>Débats parlementaires</biblScope>
+            <biblScope>Chambre des députés</biblScope>
+            <idno type="ISSN">1270-5942</idno>
+          </seriesStmt>
+        </biblFull>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projetDesc>
+        <p xml:lang="fr"><ref target="https://www.bnf.fr/fr/les-projets-de-recherche#bnf-agoda">AGODA </ref>est un projet qui a pour objectif de rendre disponible au format XML-TEI les textes de débats parlementaires à la Chambre des députés au cours de la Troisième République, suivant l'<ref target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_odd.xml">ODD </ref>défini pour le projet à partir des <ref target="https://github.com/clarin-eric/parla-clarin">recommandations produites par Parla-CLARIN. </ref> Dans une optique de preuve de concept, la phase 1 du projet AGODA se concentre plus particulièrement
+        sur la 5ème législature (1889-1893). Les textes encodés sont d'abord extraits des documents numérisés disponibles sur <ref target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item">Gallica,</ref> la bibliothèque numérique de la Biliothèque nationale de France, puis ils sont convertis 
+        en XML-TEI au moyen de scripts Python.</p>
+        <p xml:lang="en"><ref target="https://www.bnf.fr/fr/les-projets-de-recherche#bnf-agoda">AGODA </ref>is a project that aims to make available in XML-TEI format the texts of parliamentary debates in the
+        Chamber of Deputies during the Third Republic, following the<ref target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_odd.xml">ODD </ref> defined for the project from the <ref target="https://github.com/clarin-eric/parla-clarin"> Parla-CLARIN recommendations </ref> From a proof-of-concept perspective, phase 1 of the AGODA project focuses more specifically on the
+        5th legislature (1889-1893). The encoded texts are first extracted from the digitised documents available on <ref target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item">Gallica,</ref>  the digital library of the Biliothèque nationale de France, then they are converted into
+        XML-TEI using Python scripts.</p>
+      </projetDesc>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <settingDesc>
+        <setting>
+          <name type=""/>
+          <name type=""/>
+          <name type=""/>
+          <date when="1889-11-27">27 Novembre 1889</date>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <pb n="175"/>
+      <div type="sitting">
+        <div type="content">
+          <list>
+            <item>Procès-verbal : MM. Paul Déroulède, Georges
+Laguerre, Briens, Bizouard-Bert, Vernière.</item>
+            <item>Excuses et demandes de congé.</item>
+            <item>Communication d'une lettre de M. le ministre
+des finances relative à la nomination d'un
+membre de la commission de contrôle de la
+circulation monétaire.</item>
+            <item>Rapports d'élections par MM. Reybert, le comte
+Le Gonidec de Traissan, Delaunay.</item>
+            <item>Discussion des conclusions du rapport du 7e bu-
+reau sur l'élection de M. Dillon dans la 1re cir-
+conscription de l'arrondissement de Lorient
+(Morbihan). — Demande d'ajournement : MM.
+Georges Laguerre, le comte Lemercier, rap-
+porteur. Rejet. = Discussion : MM. Cuneo
+d'Ornano, le comte Lemercier, rapporteur, le
+comte de Douville-Maillefeu, Georges Laguerre.
+Adoption, au scrutin, des conclusions du bu-
+reau et annulation de l'élection.</item>
+            <item>Discussion des conclusions du rapport du 10e
+bureau sur l'élection de M. Arnault dans la 2e
+circonscription de Montauban (Tarn-et-Ga-
+ronne) : MM. Leygues, Arnault. — Demande,
+par M. Leygues, d'invalidation de l'élection.
+Adoption au scrutin.</item>
+            <item>Dépôt, par M. de Soland et plusieurs de ses col-
+lègues, d'une proposition de loi ayant pour
+objet de frapper d'un droit de douane, à leur
+entrée en France, les chanvres bruts ou pré-
+parés provenant de l'étranger.</item>
+            <item>Dépôt, par M. le marquis de La Ferronnays et
+plusieurs de ses collègues, d'une proposition
+de résolution tendant à la nomination d'une
+commission de onze membres à l'effet de
+reviser, s'il y a lieu, le régime légal et admi-
+nistratif en vigueur pour la protection du vi-
+gnoble français contre le phylloxera.</item>
+            <item>Congés.</item>
+          </list>
+          <head>SOMMAIRE</head>
+          <u>
+            <seg>M. Henri Lavertujon, l'un des secrétaires,
+donne lecture du procès-verbal de la séance
+d'hier.</seg>
+            <seg>M. Paul Déroulede. Je demande la pa-
+role.</seg>
+            <seg>M. le président. Vous avez la parole.</seg>
+          </u>
+          <u>
+            <seg>M. Paul Déroulède. Messieurs, j'ai de-
+mandé la parole pour faire une rectification
+au procès-verbal et pour m'expliquer au
+sujet du rappel à l'ordre qui m'a été infligé.</seg>
+            <seg>Voix au centre. Ce n'est pas une rectifica-
+tion.</seg>
+            <seg>M. Gustave Rivet. La tolérance pour
+toutes les ignominies qui ont été commises
+pendant la période électorale.</seg>
+            <seg>Un membre au centre. Vous avez été la
+majorité hier!</seg>
+            <seg>M. Paul Déroulède. ...nous ne sommes,
+nous, qu'une minorité, et ce langage n'au-
+rait eu aucun sens dans la bouche d'aucun
+de nous.</seg>
+            <seg>M. César Duval. Mais rien ne vous auto-
+rise à insulter la majorité !</seg>
+            <seg>M. le président. Monsieur Déroulède, il
+faudrait vous renfermer dans les limites
+d'une rectification au procès-verbal. Vous
+pouvez dire en quoi vous le trouvez inexact,
+Mais rien de plus.</seg>
+            <seg>M. Jules Maigne. C'est pour cela que
+vous êtes le représentant de la dictature.</seg>
+          </u>
+          <u>
+            <seg>M. Laguerre. Le Journal officiel me
+porte comme m'étant abstenu dans le vote
+sur la validation de l'élection de M. de
+La Martinière ; je déclare que j'étais à ma
+place et que j'ai déposé moi-même mon
+bulletin de vote en faveur de la validation.
+Je m'étonne de cette erreur, et je la re-
+grette.</seg>
+          </u>
+          <u>
+            <seg>Je fais la même observation pour mon
+ami M. Martineau, qui a émis le même vote
+et qui est porté comme s'étant abstenu.</seg>
+            <seg>M. Briens. Messieurs, lorsque M. d'Es-
+tourmel m'a interrompu pour demander
+quel était l'auteur de l'article que j'ai cité,
+on prête les paroles que j'ai prononcées à
+M. le rapporteur, tandis que c'est moi seul
+qui ai répondu à M. d'Estourmel. Je de-
+mande que la rectification soit faite au
+procès-verbal.</seg>
+            <seg>M. Bizouard-Bert. Nous avons été rete-
+nus très tard dans nos bureaux pendant la
+séance d'hier; si j'avais été présent à la
+première partie de la séance, je déclare que
+j'aurais voté « pour » la proposition de
+M. Ferroul et pour celle de M. Maxime Le-
+comte, et cela dans un sentiment d'huma-
+nité.</seg>
+            <seg>M. le président. Il n'y a pas d'autres
+observations?...</seg>
+          </u>
+          <u>
+            <seg>M. le président. M. Le Cour s'excuse de
+ne pouvoir assister à la séance de ce
+jour.</seg>
+          </u>
+          <u>
+            <seg>Les demandes seront renvoyées à la com-
+mission des congés.</seg>
+          </u>
+          <u>
+            <seg>M. le président. Jai reçu de M. le minis-
+tre des finances la lettre suivante :</seg>
+          </u>
+          <u>
+            <seg>L'élection sera mise en tête de l'ordre du
+jour de samedi.</seg>
+          </u>
+          <u>
+            <seg>M. le président. L'ordre du jour appelle
+la suite de la vérification des pouvoirs.</seg>
+          </u>
+          <u>
+            <seg>M. Reybert a la parole pour donner lec-
+ture d'un rapport sur une élection non con-
+testée.</seg>
+          </u>
+          <u>
+            <seg>M. Reybert, rapporteur. — Département
+de la Corrèze, arrondissement de Tulle, 1re
+circonscription.</seg>
+          </u>
+        </div>
+      </div>
+      <!--Partie_1-->
+      <div type="part" corresp="#pv">
+        <head>PRESIDENCE DE M. CHARLES FLOQUET.</head>
+      </div>
+      <note type="opening" xml:id="ID_1889-11-26_n1">
+        <seg type="opening" xml:id="s1">La séance est ouverte à deux heures.</seg>
+      </note>
+      <!--Partie_2-->
+      <div type="part" corresp="#pv">
+        <head>EXCUSES ET DEMANDES DE CONGE</head>
+      </div>
+      <seg>MM. Girodet et Baïhaut s'excusent de ne
+pouvoir assister à la séance de ce jour, et
+demandent des congés.</seg>
+      <!--Partie_3-->
+      <div type="part" corresp="#pv">
+        <head>COMMUNICATION DU GOUVERNEMENT</head>
+      </div>
+      <quote>« Paris, 1e 11 novembre 1889.</quote>
+      <seg>« Monsieur le président,</seg>
+      <seg>«  J'ai l'honneur de vous prier de vouloir
+bien proposer à la Chambre des députés
+de désigner un de ses membres pour faire
+partie, en remplacement de M. Fernand
+Faure, de la commission de contrôle de la
+circulation monétaire instituée par la loi du
+31 juillet 1879.</seg>
+      <seg>« Cette commission devant, aux termes
+de l'article 5 de la loi précitée, se réunir à
+la fin de chaque année, il serait à désirer
+que la Chambre procédât à la nomination
+dont il s'agit dans l'une de ses premières
+séances.</seg>
+      <seg>« Agréez, monsieur le président, l'assu-
+rance de ma très haute considération,</seg>
+      <quote>“ Le ministre des finances,
+« Signé : ROUVIER. »</quote>
+      <seg>Acte est donné de la communication dont
+la Chambre vient d'entendre la lecture. Elle
+sera insérée au procès-verbal de la séance
+et déposée aux archives.</seg>
+      <seg>La Chambre ayant fixé à jeudi lélection
+de deux membres de la commission supé-
+rieure de la caisse nationale des retraites
+pour la vieillesse et celle de deux membres
+de la commission de surveillance des Cais-
+ses d'amortissement et des dépôts et consi-
+gnations, je vous proposerai, messieurs, de
+décider que l'élection d'un membre de la
+commission de contrôle de la circulation
+monétaire aura lieu samedi prochain.</seg>
+      <seg>Il n'y a pas d'opposition?...</seg>
+      <seg>Les élections du 22 septembre ont donné
+les résultats suivants :</seg>
+      <seg>Electeurs inscrits, 17,050, dont le quart
+est de 4,263.</seg>
+      <table>
+        <row>
+          <cell>Nombre des votants, 12,322.
+Bulletins blancs et nuls, à déduire, 133.
+Suffrages exprimés, 12,189.</cell>
+        </row>
+      </table>
+      <seg>Ont obtenu<seg>M. Borie a été proclamé député comme
+ayant réuni un nombre de voix au moins
+égal à la majorité absolue des suffrages</seg></seg>
+      <table>
+        <row>
+          <cell>MM. Borie, député sortant..... 7.508 voix
+Vachal, ancien député... 4. 748</cell>
+        </row>
+      </table>
+    <!--New page added from FR_3R_5L_1889-11-26_p0176.xml--><body>
+      <pb n="175"/>
+      <div type="sitting">
+        <div type="content">
+          <list/>
+          <u/>
+          <u>
+            <seg>M. le comte Le Gonidec de Traissan,
+rapporteur. — J'ai l'honneur de déposer sur
+le bureau de la Chambre le rapport sur l'é-
+lection de M. Jaluzot dans l'arrondissement
+de Clamecy (Nievre).</seg>
+            <seg>M. le président. L'élection devant être
+contestée par M. Camille Dreyfus, le rap-
+port, conformément à l'usage, sera inséré
+au Journal officiel et la discussion inscrite
+à la suite de l'ordre du jour.</seg>
+          </u>
+          <u>
+            <seg>M. Delaunay, rapporteur.—J'ai l'honneur
+de déposer sur le bureau de la Chambre
+le rapport sur les opérations électorales de
+la 2e circonscription du 13e arrondissement
+de la ville de Paris.</seg>
+          </u>
+          <u>
+            <seg>Ce rapport conclut à l'invalldation.</seg>
+            <seg>M. le président. Le rapport conclut à
+l'invalidation. En conséquence, et confor-
+mément à l'usage, il sera inséré au Journa
+officiel et la discussion inscrite à la suite
+de l'ordre du jour.</seg>
+          </u>
+          <u>
+            <seg>M. le président. L'ordre du jour appelle
+la discussion des conclusions du rapport
+du 7e bureau sur l'élection de M. Dillon
+dans la 1re circonscription de l'arrondisse-
+ment de Lorient (Morbihan).</seg>
+          </u>
+          <u>
+            <seg>Le 7e bureau propose d'annuler les opé-
+rations électorales de la 1re circonscription
+de Lorient.</seg>
+          </u>
+          <u>
+            <seg>M. Georges Laguerre. Messieurs, j'ai
+l'intention de contester les conclusions de
+votre 7e bureau, qui demande l'annulation
+des opérations électorales de la 1re circon-
+s cription de Lorient.</seg>
+            <seg>M. le rapporteur. Je demande la pa-
+role.</seg>
+            <seg>M. le président. La parole est à M. Ie
+rapporteur.</seg>
+            <seg>M. Clémenceau et plusieurs de ses col-
+lègues. Cela ne regarde pas le Gouverne-
+ment.
+</seg>
+          </u>
+        </div>
+      </div>
+      <pb n="176">176
+CHAMBRE DES DEPUTES — SEANCE DU 26 NOVEMBRE 1889</pb>
+      <seg>M. Borie a déjà fait partie des Assemblées
+législatives et satisfait aux conditions d'âge
+et de nationalité exigées par la loi.</seg>
+      <seg>L'élection de la 2e circonscription de
+Tulle a donné lieu à plusieurs protesta-
+tions. Le 10 novembre, une lettre de M. Va-
+chal, concurrent de M. Borie, annonçait l'ar-
+rivée de protestations au nom des comités
+de Tulle et d'Argentat. Le 13, une lettre de
+M. Trémoulet, rédacteur en chef du Messa-
+ger de la Corrèze, priait le 3e bureau de sur-
+seoir en attendant une pétition qui, disait-il,
+se couvrait de signatures; mais le dossier
+se compose seulement de protestations pro-
+venant des communes de Hautefage et de
+Monceaux, suivies d'une pièce beaucoup
+plus considérable qui cite les premières, et
+qui les développe.</seg>
+      <seg>Cette pièce, rédigée au nom du comité
+républicain de Tulle, porte la seule signa-
+ture de M. Trémoulet, et cette signature
+n'est pas légalisée.</seg>
+      <seg>Les faits relevés contre l'élection de M.
+Borie visent la corruption, les mensonges,
+la calomnie, l'intimidation et l'intervention
+du clergé.</seg>
+      <seg>M. Borie, ayant été entendu par la sous-
+commission, a été invité à s'expliquer sur
+chacune de ces accusations.</seg>
+      <seg>1° Sur les faits de corruption, la protes-
+tation affirme que M. Borie aurait semé l'or
+à pleines mains et dépensé des sommes
+considérables pour payer des agents élec-
+toraux.</seg>
+      <seg>A l'appui de cette affirmation, on cite
+une déclaration portant les signatures lé-
+galisées de deux électeurs de Hautefage
+qui ont entendu dire au sieur Maurel, chif-
+fonnier, que le sieur Lacroix lui aurait payé
+pour 5 fr. de consommations afin de le
+décider à voter pour M. Borie ; ils ajou-
+tent que le sieur Lacroix était détenteur
+d'une certaine somme mise à sa disposition
+par le sieur Layotte, lequel aurait reçu
+300 fr. pour payer les électeurs. Dans le
+même ordre de faits, on cite encore une dé-
+claration du maire de Monceaux qui dit
+avoir ouï dire qu'un sieur Doumiche aurait
+reçu une somme de 100 fr., avec cette res-
+triction qu'il s'agit peut-être d'un service
+rendu.</seg>
+      <seg>Interrogé sur ces faits, M. Borie affirme
+qu'il n'a pas de fortune personnelle et qu'il
+n'a dépensé qu'une somme peu considéra-
+ble pour son élection ; il offre d'en indiquer
+la source ; il déclare n'avoir jamais accepté
+le concours pécuniaire du comité dit natio-
+nal; il nie absolument les distributions
+d'argent, et il reconnaît avoir remis au sieur
+Doumiche 100 fr. à titre de prêt.</seg>
+      <seg>Calomnies et mensonges.— La protestation
+signale les violents outrages envers les pou-
+voirs publics contenus dans la profession
+de foi de M. Borie, qui se terminait par cette
+phrase : « Le ministère actuel sera connu
+dans l'histoire sous le nom de ministère
+des voleurs. » — M. Borie aurait répété les
+mêmes outrages dans plusieurs réunions
+publiques, et, d'après la déclaration signée
+et légalisée de deux électeurs de Monceaux,
+il aurait même ajouté contre l'un des mi-
+nistres une calomnie si abominable qu'il est
+inutile de la rapporter.</seg>
+      <seg>M. Borie reconnaît l'exactitude des termes
+qu'il a employés dans la rédaction de son
+affiche; mais il nie énergiquement l'o-
+dieux propos dont il est accusé par les deux
+électeurs de Monceaux.</seg>
+      <seg>La protestation rappelle ensuite les ar-
+ticles des journaux qui patronnaient la can-
+didature de M. Borie et qui, entre autres
+mensonges, ont répété la grossière impos-
+ture d'un impôt de 8 p. 100 qui devait être
+établi à dater du 1er janvier 1890.<seg>M. Borie décline la responsabilité des ar-
+ticles parus en faveur de sa candidature ;</seg><seg>il ajoute que le plus souvent il ne les lisait
+pas et qu'il ignorait même le nouveau
+mode d'inscription des recettes au budget
+de l'instruction primaire.</seg></seg>
+      <seg>Intimidation et propagande boulangiste.—
+La protestation explique que M. Borie en-
+tretenait les électeurs dans la croyance que
+le parti du général Boulanger aurait à la
+Chambre une forte majorité ; — il distri-
+buait d'avance des places, des bureaux de
+tabac et il menaçait les fonctionnaires. On
+cite le docteur Lhospital qui aurait menacé
+Itonnier de revocation.</seg>
+      <seg>M. Borie nie absolument avoir pris ni
+pu prendre une attitude menaçante pour
+personne; au sujet du cas du docteur Lhos-
+pital, il répond que ce dernier est un
+vieillard de quatre-vingt-trois ans qui ne
+sort jamais de chez lui et qui est incapable
+d'avoir tenu le propos qu'on lui prête.</seg>
+      <seg>Dans le même ordre d'idées, on rapporte
+que M. Borie distribuait lui-même aux
+femmes des foulards de soie portant l'image
+du général Boulanger. Questionné particu-
+lièrement sur ce point qui paraît intéres-
+sant non à cause des images, mais à raison
+des foulards qui pourraient être considérés
+comme des moyens de corruption, M. Borie
+affirme qu'il s'agit seulement d'une dou-
+zaine d'échantillons qu'il tenait à titre gra-
+cieux d'un industriel lyonnais, lequel a
+fait, du reste, la même gracieuseté à tous
+les membres du comité national.</seg>
+      <seg>Ingérence cléricale. — M. Borie, après
+avoir été autrefois, dit la protestation, l'or-
+ganisateur des enterrements civils, aurait
+cette fois recherché le concours du clergé
+et les curés se seraient mis au service de
+M. Borie avec un zèle égal à celui qu'ils
+avaient déployé pendant le 16 Mai. A ce
+sujet M. le maire d'Hautefage certifie que le
+curé de cette commune a qualifié le candi-
+dat républicain de « charlatan » en disant
+les offices du 15 août.</seg>
+      <seg>Du reste tous les curés se seraient livrés
+à une active propagande non seulement
+dans leurs résidences, mais encore dans
+leurs pays d'origine. Dans la seule commune
+de Mercoeur six curés auraient visité les
+maisons, invitant à voter pour M. Borie. A
+propos de ce dernier fait la protestation cite
+une pièce qui n'a pas été trouvée dans le
+dossier. Enfin les capucins de Belpeuch
+auraient, eux aussi, pris part à la campagne
+électorale.</seg>
+      <seg>Le groupement de tous ces faits a produit
+une vive impression sur la sous-commis-
+sion et sur votre bureau. Chaque fois que
+le mensonge paraît avoir été utilisé comme
+un moyen électoral, l'élection est entachée
+d'immoralité, et, quel que soit le nombre des
+suffrages ou l'écart des voix, la question
+d'invalidation peut être posée.</seg>
+      <seg>Mais pour prendre une décision aussi
+grave, il faudrait du moins que les protes-
+tations aient été nombreuses, spontanées,
+et qu'elles apparaissent comme la manifes-
+tation d'une résistance virile à une défail-
+lance momentanée. — Ce n'est pas le cas.
+— Il importe aussi de constater que dans la
+lutte électorale la polémique a été déplora-
+ble de part et d'autre. M. Borie a soumis à
+votre sous-commission un article paru dans
+un journal hostile à sa candidature et qui
+contient un texte et des insinuations au-
+dessous de tout ce qui est tolérable.</seg>
+      <seg>L'opinion publique a dû être violemment
+troublée par toutes ces causes d'agitations ;
+le temps seul pourra ramener le calme avec
+la juste appréciation des choses et des
+hommes, en atténuant des souvenirs qui
+resteront toujours déplorables.</seg>
+      <seg>Mais, comme les questions qui sont soule-
+vées dans cette élection sont presque iden-
+tiquement les mêmes que celles qui seront
+soulevées plus tard à l'occasion de celle de
+Clignancourt, il m'apparaît que, dans l'in-
+térêt de la clarté du débat, de sa précision,
+pour ne pas créer de précédent, pour le res-
+pect du bon ordre des travaux de la Cham-
+bre, il serait plus juste de renvoyer la dis-
+cussion de l'élection de Lorient au moment
+même où la Chambre discutera l'élection
+de Clignancourt.</seg>
+    </body>
+  <!--New page added from FR_3R_5L_1889-11-26_p0177.xml--><body>
+      <pb n="175"/>
+      <div type="sitting">
+        <div type="content">
+          <list/>
+          <u>
+            <seg>M. le président. Il est bien entendu, en
+tout cas, que les deux élections ne peuvent
+être mêlées, que chacune d'elles sera dis-
+cutée séparément.</seg>
+            <seg>M. Laguerre. Parfaitement, monsieur le
+président, et il sera statué par un double
+vote.</seg>
+          </u>
+          <u>
+            <seg>M. le président. Il s agit uniquement de
+savoir, en ce moment, si la Chambre, adop-
+tant la proposition de M. Laguerre, veut
+remettre jusqu'au jour où l'on discutera
+l'élection de Clignancourt l'examen des con-
+clusions du 7e bureau sur l'élection de
+Lorient.</seg>
+          </u>
+          <u>
+            <seg>Je consulte la Chambre sur la question
+ainsi posée.</seg>
+            <seg>M. le président. M. Cuneo d'Ornano a la
+parole.</seg>
+          </u>
+          <u>
+            <seg>M. Cuneo d'Ornano. Messieurs, comme
+membre du 7e bureau, j'ai repoussé les
+conclusions auxquelles la majorité de ce
+bureau s'est arrêtée; j'ai repoussé les con-
+clusions du rapport de l'honorable comte
+Lemercier, qui vous propose, ainsi que
+vous avez pu le voir au Journal officiel,
+d'annuler les opérations électorales qui ont
+eu lieu dans la 1re circonscription de Lo-
+rient.</seg>
+            <seg>Un membre à gauche. C'est aller un peu
+loin.</seg>
+            <seg>A gauche. Et par la loi.</seg>
+          </u>
+          <u>
+            <seg>M. Cuneo d'Ornano. Non, non. Et vous
+voyez que je ne m'attarde pas, que j'entre
+tout de suite, pour épargner vos instants,
+dans le vif de la question, protégé que je
+suis par la loi constitutionnelle du 16 juil-
+let 1875, par son article 10 que je replace
+sous vos yeux. Veuillez méditer ce texte ca-
+tégorique :</seg>
+            <seg>M. Clémenceau. Si ! Si !</seg>
+            <seg>Il n'y a rien de plus, vous voilà obligés
+d'en convenir, contre l'honorable élu de
+Lorient; et encore est-ce seulement comme
+complice que M. Dillon a été prévenu et
+condamné, condamné pour crime d'amitié.</seg>
+            <seg>Je vous ai dit que je vous citerais des
+exemples d'hommes respectés et honorés
+qui ont, eux aussi, été frappés de condam-
+nations semblables. Il y en a eu beaucoup
+depuis Godefroy Cavaignac, Louis Blanc,
+Ledru-Rollin, Armand Marrast : ce sont des
+condamnés d'ordre politique condamnés
+par des Assemblées politiques pour attentat
+et complot politiques. Et ces condamnés
+dont je réveille le souvenir sont des noms
+chers à la démocratie française. Ledru-Rol-
+lin, Marrast, Godefroy Cavaignac, ont été
+frappés pour attentat ou complot par des
+Assemblées politiques, au nom des pas-
+sions politiques de l'époque, sans que
+l'honneur personnel de ces condamnés po-
+litiques ait souffert la moindre atteinte.</seg>
+          </u>
+        </div>
+      </div>
+      <pb n="177">CHAMBRE DES DEPUTES — SEANCE DU 26 NOVEMBRE 1889  177</pb>
+      <seg>Votre pouvoir, messieurs, étant sans
+limite, j'espère que ma parole sera sans
+entraves. Vous me permettrez tout au
+moins de ne soulever en rien ici les ques-
+tions personnelles qui n'ont pas à s'y glis-
+ser, car la personnalité de l'honorable comte
+Dillon n'est pas mise en cause. Le rappor-
+teur du 7e bureau s'occupe seulement de
+savoir si l'élu de la 1re circonscription de
+Lorient était éligible ou non.</seg>
+      <seg>Vour murmurez ? vous semblez douter ?
+Je vais alors vous retenir quelques instants
+de plus sur ce point préliminaire.</seg>
+      <seg>Est-il vrai que la condamnation qui a
+frappé l'élu de Lorient soit uniquement une
+condamnation pour complot et attentat?
+Rien de plus, rien de moins. Le complot et
+l'attentat n'ont-ils pas toujours été considé-
+rés par vos devanciers, messieurs de la
+gauche, comme des crimes purement poli-
+tiques, notamment par ceux d'entre vous,
+très honorables d'ailleurs comme hommes
+privés, qui ont subi les mêmes condamna-
+tions ?</seg>
+      <seg>Aussi bien, j'ai le droit de répéter sans
+soulever aucune objection qu'il s'agit ici,
+dans l'élection de la 1re circonscription de
+Lorient, d'un homme frappé d'une condam-
+nation purement politique par un tribunal
+purement politique, et que par conséquent
+nous ne sommes pas dans la même situa-
+tion que si nous nous trouvions en présence
+d'un élu dont l'inégibilité découlerait de
+quelque indignité ou de quelque violation
+des lois de l'honneur.</seg>
+      <seg>Ne m'interrompez pas aussi imprudem-
+ment, je vous en prie. Si l'on veut parler
+des commissions mixtes, de ces juridic-
+tions politiques des temps de guerre civile,
+je suis prêt à en tirer parti pour ma discus-
+sion; je ne redoute pas les interruptions, si
+ce n'est parce qu'elles allongeraient un dé-
+bat que je veux resserrer le plus possible.</seg>
+      <seg>Messieurs, cela dit uniquement pour
+écarter du débat toute digression, toute di-
+version qui prendrait un caractère person-
+nel et qui le passionnerait inutilement,
+car je voudrais lui maintenir son caractère
+de débat de droit public, de droit constitu-
+tionnel et parlementaire, — cela dit, je n'ai
+pas besoin de vous demander si, en fait,
+M. le comte Dillon, dont l'honorabilité ne
+saurait être même mise en cause, a été
+vraiment élu.</seg>
+      <seg>C'est ce que le rapport de l'honorable
+comte Lemercier ne met pas en doute.
+M. Dillon a obtenu, sur 14,000 votants,
+9,291 voix; plus des deux tiers, 5,000 voix
+de majorité sur ses deux concurrents. Les
+suffrages qui lui ont été accordés ont été
+parfaitement relevés comme suffrages ex-
+primés en faveur d'un candidat qui avait le
+droit de l'être et qui avait fait sa déclara-
+tion. Et les procès-verbaux que j'ai parcou-
+rus, qui sont entre les mains de l'honorable
+rapporteur du 7° bureau, ne mentionnent
+pas l'ombre d'une protestation, ni à raison
+des opérations matérielles du scrutin ni à
+raison de l'inéligibilité de l'élu. Il n'y a pas
+d'élection plus simple, plus claire, plus
+pure : pas une protestation au dossier, pas
+une protestation dans les procès-verbaux.</seg>
+      <seg>Quelle que soit votre opinion personnelle,
+messieurs, vous ne pouvez contester le
+caractère bien net, bien libre, de cette ma-
+nifestation du suffrage universel; vous ne
+pouvez refuser de voir que la volonté des
+électeurs a été bien expresse et bien pré-
+cise, puisque, en présence de deux concur-
+rents officiels, M. le comte Dillon a obtenu
+contre eux les trois quarts des suffrages
+exprimés.</seg>
+      <seg>Ainsi l'élection est bien sincère; M. le
+comte Dillon est bien élu. Il a été élu par le
+libre suffrage de ses concitoyens, dans des
+conditions absolues de calme, de paix,de sin-
+cérité, en l'absence de tout ce qu'on incri-
+mine dans les autres élections : corruption,
+ingérence du clergé, pression administra-
+tive, rien de tout cela n'est articulé; il n'y
+a pas d'élection plus claire et plus pure.<seg>Mais voilà le 7e bureau qui, par l'organe</seg></seg>
+    </body>
+  </body>
+  </text>
+</TEI>
